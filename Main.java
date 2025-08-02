@@ -1,9 +1,3 @@
-# codeforces
-Codeforces practice
-
-### Template
-
-```java
 import java.io.*;
 import java.util.*;
 
@@ -21,7 +15,16 @@ public class Main {
     }
 
     static void solve() {
-        // Solve Problem
+        int n = in.nextInt();
+        int h = in.nextInt();
+        int totalWidth = 0;
+
+        for (int i = 0; i < n; i++) {
+            int height = in.nextInt();
+            totalWidth += (height > h) ? 2 : 1;
+        }
+
+        out.println(totalWidth);
     }
 
     // Fast I/O
@@ -61,5 +64,3 @@ public class Main {
         }
     }
 }
-
-```
