@@ -16,6 +16,15 @@ for (char c : s.toCharArray()) {
 }
 ```
 
+#### toCharArray
+
+ - Convert String to Char Array.
+
+```java
+String s = in.nextLine();
+char[] c = s.toCharArray();
+```
+
 ### Template
 
 ```java
