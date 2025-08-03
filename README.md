@@ -1,6 +1,21 @@
 # codeforces
 Codeforces practice
 
+### Tips
+
+#### HashSet
+
+ - Collection that store unique elements, without a specifico order.
+
+```java
+String s = String.valueOf(y);
+Set<Character> digits = new HashSet<>();
+
+for (char c : s.toCharArray()) {
+    digits.add(c);
+}
+```
+
 ### Template
 
 ```java
