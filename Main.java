@@ -16,15 +16,30 @@ public class Main {
 
     static void solve() {
         int n = in.nextInt();
-        int h = in.nextInt();
-        int totalWidth = 0;
+        int[] p = new int[n];
+        int[] r = new int [n];
 
         for (int i = 0; i < n; i++) {
-            int height = in.nextInt();
-            totalWidth += (height > h) ? 2 : 1;
+            p[i] = in.nextInt(); 
         }
 
-        out.println(totalWidth);
+        // 0(n)^2
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < p.length; j++) {
+                if ((i+1) == p[j]) {
+                    r[i] = j + 1;
+                }
+            }
+        }
+
+        // O(n)
+        // for (int i = 0; i < r.length; i++) {
+        //     r[p[i] - 1 ] = i + 1;
+        // }
+
+        for (int i = 0; i < r.length; i++) {
+            out.println(r[i] + " ");
+        }
     }
 
     // Fast I/O
