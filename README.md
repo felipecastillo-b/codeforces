@@ -3,6 +3,17 @@ Codeforces practice
 
 ### Tips
 
+### Reverse Sort
+
+ - Sort Array before Reverse Sort
+
+ ```java
+ Integer[] coins = new Integer[n]; // 3, 7, 9, 1
+ Arrays.sort(coins, Collections.reverseOrder());
+ // sort 1, 3, 7, 9
+ // reverseOrder 9, 7, 3, 1
+ ```
+
 #### HashSet
 
  - Collection that store unique elements, without a specifico order.
