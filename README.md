@@ -1,22 +1,23 @@
 # codeforces
+
 Codeforces practice
 
 ### Tips
 
 ### Reverse Sort
 
- - Sort Array before Reverse Sort
+- Sort Array before Reverse Sort
 
- ```java
- Integer[] coins = new Integer[n]; // 3, 7, 9, 1
- Arrays.sort(coins, Collections.reverseOrder());
- // sort 1, 3, 7, 9
- // reverseOrder 9, 7, 3, 1
- ```
+```java
+Integer[] coins = new Integer[n]; // 3, 7, 9, 1
+Arrays.sort(coins, Collections.reverseOrder());
+// sort 1, 3, 7, 9
+// reverseOrder 9, 7, 3, 1
+```
 
 #### HashSet
 
- - Collection that store unique elements, without a specifico order.
+- Collection that store unique elements, without a specifico order.
 
 ```java
 String s = String.valueOf(y);
@@ -27,9 +28,36 @@ for (char c : s.toCharArray()) {
 }
 ```
 
+- Compare two Set.
+
+```java
+int n = in.nextInt();
+Set<Integer> possibleLines = new HashSet<>();
+
+for (int i = 0; i < n; i++) {
+    int r = in.nextInt();
+    Set<Integer> stopsLines = new HashSet<>();
+
+    for (int j = 0; j < r; j++) {
+        int stop = in.nextInt();
+        stopsLines.add(stop);
+    }
+
+    if (i == 0) {
+        possibleLines.addAll(stopsLines); // agrega todo
+    } else {
+        possibleLines.retainAll(stopsLines); // solo retiene las que se repiten
+    }
+}
+
+for (int line : possibleLines) {
+    out.print(line + " ");
+}
+```
+
 #### toCharArray
 
- - Convert String to Char Array.
+- Convert String to Char Array.
 
 ```java
 String s = in.nextLine();
