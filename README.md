@@ -4,7 +4,7 @@ Codeforces practice
 
 ### Tips
 
-### Reverse Sort
+#### Reverse Sort
 
 - Sort Array before Reverse Sort
 
@@ -52,6 +52,20 @@ for (int i = 0; i < n; i++) {
 
 for (int line : possibleLines) {
     out.print(line + " ");
+}
+```
+
+- Search a specific element in HashSet
+
+```java
+Set<Integer> arthurLikes = new HashSet<>();
+
+for (int i = 0; i < a; i++) {
+    arthurLikes.add(in.nextInt());
+}
+
+if (arthurLikes.contains(i)) {
+    out.print(1 + " ");
 }
 ```
 
