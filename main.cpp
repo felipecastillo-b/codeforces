@@ -1,3 +1,6 @@
+/**
+ *  author: castillodk
+**/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,19 +14,15 @@ int main() {
     int t; cin >> t;
 
     while (t--) {
-        vector<int> people(4);
-        int count = 0;
+        string nums; cin >> nums;
 
-        for (size_t i = 0; i < people.size(); i++)
+        if (nums[0]+nums[1]+nums[2] == nums[3]+nums[4]+nums[5])
         {
-            cin >> people[i];
-
-            if (i > 0 && people[0] < people[i])
-            {
-                count++;
-            }
+            cout << "YES" << "\n";
+        } else {
+            cout << "NO" << "\n";
         }
-        cout << count << "\n";
+        
     }
     return 0;
 }
