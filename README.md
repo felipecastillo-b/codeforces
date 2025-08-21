@@ -2,7 +2,63 @@
 
 Codeforces practice
 
-### Tips
+## Tips
+
+### C++
+
+#### Syntax
+
+- Basic Syntax
+
+```cpp
+cin >> t; // Input
+cout << t; // Output
+int aux = 5;
+vector<int> v(aux); // // 5 size Array
+
+// Types
+int a = 10;
+float b = 5.5;
+double c = 9.12345;
+char d = 'A';
+bool e = true;
+string s = "Hello Chonka";
+
+// Operators
+int sum = a + 5;
+int mult = a * 2;
+bool isEqual = (a == 10);
+
+// If
+if (a > 5) {
+    cout << "Mayor que 5" << endl;
+} else {
+    cout << "Menor o igual a 5" << endl;
+}
+
+// While
+int i = 0;
+while (i < 5) {
+    cout << i << " ";
+    i++;
+}
+
+// For
+for (int i = 0; i < aux; i++) { // Assign values
+        v[i] = i + 1;
+    }
+
+for (int i = 0; i < aux; i++) { // Print values
+        cout << v[i] << " ";
+    }
+
+// Functions
+int sum(int x, int y) {
+    return x + y;
+}
+```
+
+### Java
 
 #### Reverse Sort
 
