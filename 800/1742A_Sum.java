@@ -22,11 +22,7 @@ public class Main {
             int b = in.nextInt();
             int c = in.nextInt();
 
-            if (a + b == c) {
-                out.println("YES");
-            } else if (a + c == b){
-                out.println("YES");
-            } else if (c + b == a) {
+            if (a + b == c || a + c == b || b + c == a) {
                 out.println("YES");
             } else {
                 out.println("NO");
