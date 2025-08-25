@@ -56,6 +56,14 @@ for (int i = 0; i < aux; i++) { // Print values
 int sum(int x, int y) {
     return x + y;
 }
+
+// Lowercase
+string s; cin >> s;
+
+for (char &c : s)
+{
+    c = tolower(c);
+}
 ```
 
 ### Java
