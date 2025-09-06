@@ -64,6 +64,10 @@ for (char &c : s)
 {
     c = tolower(c);
 }
+
+// Min
+int minNumber = min(totalMl, totalLimes)
+int minNumber = min({totalMl, totalLimes, totalSalt})
 ```
 
 ### Java
