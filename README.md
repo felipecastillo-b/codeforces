@@ -68,6 +68,14 @@ for (char &c : s)
 // Min
 int minNumber = min(totalMl, totalLimes)
 int minNumber = min({totalMl, totalLimes, totalSalt})
+
+// Sum Digits Number
+int x; cin >> x; // 77
+int sum = 0;
+while (x > 0) {
+    sum += x % 10; // 7 + 7 = 14
+    x = x / 10;
+}
 ```
 
 ### Java
