@@ -52,6 +52,13 @@ for (int i = 0; i < aux; i++) { // Print values
         cout << v[i] << " ";
     }
 
+// For compare strings
+for (size_t i = 0; i < s.length(); i++) {
+    if (s[i] != a[i]) {
+        aux++;
+    }
+}
+
 // Functions
 int sum(int x, int y) {
     return x + y;
